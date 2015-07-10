@@ -8,7 +8,9 @@ Install centos without any prompts.
 2. Start a server running on the local network that serves the new ks.cfg file.
    Start the local server in the same directory where you downloaded the ks.cfg
 
-    ruby -run -e httpd . -p 8000
+```
+ruby -run -e httpd . -p 8000
+```
 
 3. Plug in the usb drive with the centos min iso
 4. Restart PC
@@ -18,6 +20,8 @@ Install centos without any prompts.
 8. Press esc
 9. At the `boot:` prompt type:
 
-    linux ks=http://192.168.1.3:8000/ks.cfg
+```
+linux ks=http://192.168.1.3:8000/ks.cfg
+```
 
 10. Press enter and :)
